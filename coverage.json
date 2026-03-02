@@ -1,0 +1,59 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-24T16:20:29.265Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 1,
+    "implemented": 1,
+    "items": [
+      {
+        "id": "REQ-1",
+        "summary": "Add a Tinder-style profile card header to each economist's StatementSlide and EconomistRevealCard. Each card header should display the economist's name in large bold typography, a stylized avatar/portrait placeholder with a gradient backdrop, age or era label (e.g. '1883–1946'), and location/school of thought tag — all styled in the classic Tinder card layout (full-bleed image area at top, overlaid name/info at bottom-left in white text on a dark gradient).",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/types/slides.ts",
+          "frontend/src/data/slides.ts",
+          "frontend/src/components/ProfileCardHeader.tsx",
+          "frontend/src/components/StatementSlide.tsx",
+          "frontend/src/components/EconomistRevealCard.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/types/slides.ts",
+          "frontend/src/data/slides.ts",
+          "frontend/src/components/ProfileCardHeader.tsx",
+          "frontend/src/components/StatementSlide.tsx",
+          "frontend/src/components/EconomistRevealCard.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "backend/blob-storage/Mixin.mo",
+    "backend/blob-storage/Storage.mo",
+    "build-request.json",
+    "build-template/README.md",
+    "caffeine.lock.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/public/assets/generated/economist-adam-smith.dim_400x500.png",
+    "frontend/public/assets/generated/economist-friedman.dim_400x500.png",
+    "frontend/public/assets/generated/economist-hayek.dim_400x500.png",
+    "frontend/public/assets/generated/economist-keynes.dim_400x500.png",
+    "frontend/public/assets/generated/economist-marx.dim_400x500.png",
+    "frontend/public/assets/generated/economist-schumpeter.dim_400x500.png",
+    "frontend/src/components/EconomistRevealCard.tsx",
+    "frontend/src/components/ProfileCardHeader.tsx",
+    "frontend/src/components/StatementSlide.tsx",
+    "frontend/src/data/slides.ts",
+    "frontend/src/types/slides.ts",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

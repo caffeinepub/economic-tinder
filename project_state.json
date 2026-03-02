@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "New project",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Stylized illustrated portrait of Adam Smith in a warm sepia oval frame with subtle gold border (economist-adam-smith.dim_400x500.png)\n- Stylized illustrated portrait of John Maynard Keynes in a warm sepia oval frame with subtle gold border (economist-keynes.dim_400x500.png)\n- Stylized illustrated portrait of Milton Friedman in a warm sepia oval frame with subtle gold border (economist-friedman.dim_400x500.png)\n- Stylized illustrated portrait of Karl Marx in a warm sepia oval frame with subtle gold border (economist-marx.dim_400x500.png)\n- Stylized illustrated portrait of Friedrich Hayek in a warm sepia oval frame with subtle gold border (economist-hayek.dim_400x500.png)\n- Stylized illustrated portrait of Joseph Schumpeter in a warm sepia oval frame with subtle gold border (economist-schumpeter.dim_400x500.png)",
+  "existing_features": [
+    {
+      "id": "feature-add-a-tinder-style-profile-card-header-to-each-economist-s-statementslide-and-economistrevealcard-each-card-header-should-display-the-economist-s-name-in-large-bold-typography-a-stylized-avatar-portrait-placeholder-with-a-gradient-backdrop-age-or-era-label-e-g-1883-1946-and-location-school-of-thought-tag-all-styled-in-the-classic-tinder-card-layout-full-bleed-image-area-at-top-overlaid-name-info-at-bottom-left-in-white-text-on-a-dark-gradient",
+      "title": "Add a Tinder-style profile card header to each economist's StatementSlide and EconomistRevealCard. Each card header should display the economist's name in large bold typography, a stylized avatar/portrait placeholder with a gradient backdrop, age or era label (e.g. '1883–1946'), and location/school of thought tag — all styled in the classic Tinder card layout (full-bleed image area at top, overlaid name/info at bottom-left in white text on a dark gradient).",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [],
+  "projectName": "Economic Tinder",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

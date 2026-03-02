@@ -1,0 +1,28 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-add-a-tinder-style-profile-card-header-to-each-economist-s-statementslide-and-economistrevealcard-each-card-header-should-display-the-economist-s-name-in-large-bold-typography-a-stylized-avatar-portrait-placeholder-with-a-gradient-backdrop-age-or-era-label-e-g-1883-1946-and-location-school-of-thought-tag-all-styled-in-the-classic-tinder-card-layout-full-bleed-image-area-at-top-overlaid-name-info-at-bottom-left-in-white-text-on-a-dark-gradient",
+      "featureTitle": "Add a Tinder-style profile card header to each economist's StatementSlide and EconomistRevealCard. Each card header should display the economist's name in large bold typography, a stylized avatar/portrait placeholder with a gradient backdrop, age or era label (e.g. '1883–1946'), and location/school of thought tag — all styled in the classic Tinder card layout (full-bleed image area at top, overlaid name/info at bottom-left in white text on a dark gradient).",
+      "files": [
+        "frontend/src/components/EconomistRevealCard.tsx",
+        "frontend/src/components/ProfileCardHeader.tsx",
+        "frontend/src/components/StatementSlide.tsx",
+        "frontend/src/data/slides.ts",
+        "frontend/src/types/slides.ts"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "blob-storage@4.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

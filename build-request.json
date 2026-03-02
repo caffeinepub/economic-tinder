@@ -1,0 +1,49 @@
+{
+  "kind": "build_request",
+  "title": "Add Tinder-style profile header cards for each economist",
+  "projectName": "Economic Tinder",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Add a Tinder-style profile card header to each economist's StatementSlide and EconomistRevealCard. Each card header should display the economist's name in large bold typography, a stylized avatar/portrait placeholder with a gradient backdrop, age or era label (e.g. '1883–1946'), and location/school of thought tag — all styled in the classic Tinder card layout (full-bleed image area at top, overlaid name/info at bottom-left in white text on a dark gradient).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-6"
+        ],
+        "quotes": [
+          "make the tinder head for each so it's for design purposes"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Each economist entry (in StatementSlide and EconomistRevealCard) displays a Tinder-style profile card header with name, era/dates, and school-of-thought tag.",
+        "The card header uses a full-bleed gradient or colored background at the top with white overlaid text at the bottom-left, matching Tinder's visual layout.",
+        "The design is clearly labeled as 'for design purposes' or uses a clear placeholder treatment so it's understood as a UI mockup.",
+        "The overall styling remains consistent with the existing dark/gold Economic Tinder design system.",
+        "A shareable deployed link is produced after deployment."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify files under frontend/src/hooks/ or frontend/src/components/ui.",
+    "Keep all changes consistent with the existing OKLCH dark-theme and gold accent design system defined in frontend/src/index.css and tailwind.config.js.",
+    "Do not alter backend/main.mo — this app is frontend-only."
+  ],
+  "nonGoals": [
+    "Sourcing or embedding real economist portrait photographs.",
+    "Adding new swipe mechanics or slide logic.",
+    "Any backend data persistence."
+  ],
+  "imageRequirements": {
+    "required": [
+      "Stylized illustrated portrait of Adam Smith in a warm sepia oval frame with subtle gold border (economist-adam-smith.dim_400x500.png)",
+      "Stylized illustrated portrait of John Maynard Keynes in a warm sepia oval frame with subtle gold border (economist-keynes.dim_400x500.png)",
+      "Stylized illustrated portrait of Milton Friedman in a warm sepia oval frame with subtle gold border (economist-friedman.dim_400x500.png)",
+      "Stylized illustrated portrait of Karl Marx in a warm sepia oval frame with subtle gold border (economist-marx.dim_400x500.png)",
+      "Stylized illustrated portrait of Friedrich Hayek in a warm sepia oval frame with subtle gold border (economist-hayek.dim_400x500.png)",
+      "Stylized illustrated portrait of Joseph Schumpeter in a warm sepia oval frame with subtle gold border (economist-schumpeter.dim_400x500.png)"
+    ],
+    "edits": []
+  }
+}

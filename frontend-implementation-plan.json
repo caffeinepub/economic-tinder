@@ -1,0 +1,45 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Add Tinder-style profile header cards for each economist",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Add Tinder-style profile card headers to StatementSlide and EconomistRevealCard displaying economist name, era/dates, school of thought, and portrait with full-bleed gradient backdrop",
+      "acceptanceCriteria": [
+        "Each economist entry (in StatementSlide and EconomistRevealCard) displays a Tinder-style profile card header with name, era/dates, and school-of-thought tag.",
+        "The card header uses a full-bleed gradient or colored background at the top with white overlaid text at the bottom-left, matching Tinder's visual layout.",
+        "The design is clearly labeled as 'for design purposes' or uses a clear placeholder treatment so it's understood as a UI mockup.",
+        "The overall styling remains consistent with the existing dark/gold Economic Tinder design system.",
+        "A shareable deployed link is produced after deployment."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/types/slides.ts",
+          "operation": "modify",
+          "description": "Add optional era (e.g., '1883–1946') and schoolOfThought (e.g., 'Austrian School') fields to the EconomistSummary type to support the Tinder-style profile card header metadata."
+        },
+        {
+          "path": "frontend/src/data/slides.ts",
+          "operation": "modify",
+          "description": "Populate the new era and schoolOfThought fields for each economist entry (Adam Smith, Keynes, Friedman, Marx, Hayek, Schumpeter) in the slides data array, providing historically accurate dates and school labels."
+        },
+        {
+          "path": "frontend/src/components/ProfileCardHeader.tsx",
+          "operation": "create",
+          "description": "Create a new reusable ProfileCardHeader component that accepts economist name, era, schoolOfThought, and portrait image path as props. Render a Tinder-style full-bleed card header with a gradient backdrop (using the dark-themed OKLCH gold/background tokens from frontend/src/index.css), the portrait image centered in an oval frame at the top, and overlaid white text at the bottom-left displaying the name in large bold typography, era label, and school-of-thought tag. Include a subtle label or class naming convention indicating this is 'for design purposes'."
+        },
+        {
+          "path": "frontend/src/components/StatementSlide.tsx",
+          "operation": "modify",
+          "description": "Import and integrate the ProfileCardHeader component into the StatementSlide. When the economist is revealed (after the user makes a swipe choice), display the ProfileCardHeader above or within the economist reveal section, passing the economist's name, era, schoolOfThought, and the generated portrait image path from frontend/public/assets/generated/economist-<name>.dim_400x500.png (e.g., frontend/public/assets/generated/economist-adam-smith.dim_400x500.png). Ensure the layout flows naturally with the existing statement and discussion prompt content."
+        },
+        {
+          "path": "frontend/src/components/EconomistRevealCard.tsx",
+          "operation": "modify",
+          "description": "Import and integrate the ProfileCardHeader component into the EconomistRevealCard. Replace or supplement the existing economist display section with the ProfileCardHeader at the top of the card, passing the economist's name, era, schoolOfThought, and the generated portrait image path from frontend/public/assets/generated/economist-<name>.dim_400x500.png. Maintain the existing key belief bullets, discussion prompt, and agreed/disagreed badge below the header, ensuring the overall card animation and styling remain consistent with the dark/gold design system."
+        }
+      ]
+    }
+  ]
+}

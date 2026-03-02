@@ -1,0 +1,18 @@
+{
+  "frontend/src/index.css": "Global styles with dark navy/charcoal theme, gold accents, custom OKLCH color tokens for swipe-right (green), swipe-left (red), slide surfaces, and animation keyframes (fadeInUp, fadeInScale, slideInRight, pulse-gold). Imports Playfair Display and Inter fonts.",
+  "frontend/tailwind.config.js": "Extended Tailwind config with custom color tokens (slide-bg, slide-surface, gold, swipe-right, swipe-left), display/sans font families, large display font sizes for projector readability, and card shadow utilities.",
+  "frontend/src/types/slides.ts": "TypeScript interfaces for all slide types; adds optional `economistEra` and `economistSchool` fields to `StatementSlideData`, and optional `era` / `schoolOfThought` fields to `EconomistSummary`.",
+  "frontend/src/data/slides.ts": "Complete slide data array with all 11 slides; updated economist portrait paths to use the 400×500 generated assets where available, and populated `economistEra` and `economistSchool` for every statement slide and `era`/`schoolOfThought` for every summary economist entry.",
+  "frontend/src/components/ProgressIndicator.tsx": "Visual progress indicator showing current slide as dot-based bar plus \"X / 11\" counter in gold.",
+  "frontend/src/components/SwipeButton.tsx": "Reusable swipe button component styled green for right/agree and red for left/disagree with hover glow effects and large touch-friendly sizing.",
+  "frontend/src/components/EconomistRevealCard.tsx": "Animated economist reveal card that now uses `ProfileCardHeader` at the top for the Tinder-style portrait header, followed by the user-choice badge, key belief bullets, and discussion prompt in the card body below.",
+  "frontend/src/components/TitleSlide.tsx": "Title slide with logo, large display title, subtitle, feature bullets, and animated gold \"Let's Start\" CTA button.",
+  "frontend/src/components/RulesSlide.tsx": "Rules slide displaying the 4 swipe rules as icon-labeled cards with a visual left/right preview.",
+  "frontend/src/components/StatementSlide.tsx": "Statement slide that now shows a blurred/mystery Tinder-style card teaser (with the portrait blurred and a \"Mystery Economist\" overlay) before the user swipes, then reveals the full `EconomistRevealCard` with the Tinder header after the choice is made.",
+  "frontend/src/components/LightningRoundSlide.tsx": "Lightning round slide cycling through 4 rapid-fire statements one at a time, then revealing all 4 economist matches simultaneously with user answer badges.",
+  "frontend/src/components/SummarySlide.tsx": "Summary slide displaying all 7 economists in a grid, highlighting matched economists (swiped right) with gold glow and heart badges, plus reflection prompt and restart button.",
+  "frontend/src/components/PresentationApp.tsx": "Main presentation controller managing current slide index, swipe choices state, navigation (goNext/goBack/restart), and rendering the correct slide component with header progress bar and footer navigation.",
+  "frontend/src/App.tsx": "Root app component that renders PresentationApp directly (no routing needed for single-page presentation).",
+  "frontend/src/hooks/useQueries.ts": "Empty placeholder file since this app requires no backend queries.",
+  "frontend/src/components/ProfileCardHeader.tsx": "New reusable Tinder-style profile card header component that renders a full-bleed portrait image with a gradient overlay, a \"Design Preview\" watermark badge, and bottom-left overlaid text showing the economist's name, era, and school-of-thought tag."
+}

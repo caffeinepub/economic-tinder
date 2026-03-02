@@ -1,0 +1,41 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-24T16:20:29.263Z",
+  "summary": "The diff implements a Tinder-style profile card header component (ProfileCardHeader.tsx) that is integrated into both EconomistRevealCard and StatementSlide. The implementation covers nearly all acceptance criteria for REQ-1: name in large bold typography, era/dates, school-of-thought tag, full-bleed gradient background, white overlaid text at bottom-left, and a 'Design Preview' watermark. The data layer (slides.ts, types/slides.ts) is updated with era and school fields for all economists. The deployed link AC cannot be verified from the diff alone.",
+  "missing_requirements": [
+    {
+      "id": "REQ-1",
+      "requirement": "A shareable deployed link is produced after deployment.",
+      "reason": "The diff contains only source code changes. There is no evidence of a deployment step, CI/CD configuration change, or a recorded shareable URL anywhere in the diff.",
+      "evidence": []
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "A blurred/mystery Tinder-style teaser card is shown in StatementSlide before the user swipes, hiding the economist identity with blur and a 'Mystery Economist' overlay.",
+      "reason": "The BuildRequest does not mention a pre-swipe mystery/blurred state. REQ-1 only asks for a Tinder-style profile card header on each card; the mystery teaser is an additional interaction pattern not requested.",
+      "evidence": [
+        "frontend/src/components/StatementSlide.tsx"
+      ]
+    },
+    {
+      "description": "An optional 'badge' prop (e.g. 'Economist Match') is added to ProfileCardHeader and rendered as a top-right badge on EconomistRevealCard.",
+      "reason": "The BuildRequest does not request a badge or 'Economist Match' label on the card header. This is an addition beyond the specified requirements.",
+      "evidence": [
+        "frontend/src/components/ProfileCardHeader.tsx",
+        "frontend/src/components/EconomistRevealCard.tsx"
+      ]
+    }
+  ],
+  "confidence": 0.82,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/src/components/EconomistRevealCard.tsx",
+    "frontend/src/components/ProfileCardHeader.tsx",
+    "frontend/src/components/StatementSlide.tsx",
+    "frontend/src/data/slides.ts",
+    "frontend/src/types/slides.ts",
+    "project_state.json"
+  ]
+}
